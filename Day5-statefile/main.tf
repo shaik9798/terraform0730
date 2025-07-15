@@ -6,5 +6,8 @@ resource "aws_instance" "name" {
 
 resource "aws_vpc" "name1"{
   cidr_block = "10.0.0.0/16"
+  tags = {
+    Name = "demo"
+  }
 
 }
